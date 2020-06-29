@@ -2,11 +2,11 @@
   .Side-bar_top
     .Top-item
       .Top-item_name
-        masa
+        = current_user.name
       .Top-item_icon
         = link_to "#", class: "Contents__btn" do
           = icon('far', 'edit', class: 'left')
-        = link_to "#", class: "Contents__btn" do
+        = link_to edit_user_path(current_user), class: "Contents__btn" do
           = icon('fas', 'cog',class: 'right')
   .Side-bar_group  
     .head-space  
