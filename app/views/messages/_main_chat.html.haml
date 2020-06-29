@@ -1,0 +1,21 @@
+.Chat-main
+  .Chat-main__group_info
+    .left-box
+      %p5 test
+      %p6 Member:masa
+    .right-box
+      %button Edit
+  .Chat-main_group_message
+    .post-name
+      masa 
+      %span 2019/11/20(wed)174301
+    .post-message
+      おはよう!!
+  .Message-form
+    .send-message
+      %input(type="text" placeholder="type a message")/
+      %label{class: "input-box__image"}
+        = icon('far', 'image', class: 'stong')
+        %input{type: "file", class: 'file-image'}
+    .send  
+      %button2 Send
