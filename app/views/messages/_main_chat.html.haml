@@ -13,7 +13,7 @@
         Edit
 
   .MessageField
-    = render @messages
+  = render @messages
 
   .Message-form
     = form_with model: [@group, @message], html: {class: "Form"}, local: true do |f|

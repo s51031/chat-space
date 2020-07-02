@@ -62,10 +62,9 @@
 
   .Chat-main{
     width: calc(100% - 300px);
-    height: 100%;
+    height: 100vh;
     background-color: #fafafa;
     &__group_info{
-      height: 100px;
       background-color: #ffffff;
       display: flex;
       justify-content: space-between;
@@ -94,14 +93,9 @@
         }
       }
     }
-    .MessageField{
-      overflow: scroll;
-      height: calc(100vh - 190px);
     .Chat-main_group_message{
-      
       display: flex;
       flex-direction: column;
-
       .name-message{
         display: flex;
         align-items: center;
@@ -123,7 +117,6 @@
          }
      
     } 
-  }
     .Message-form{
       background-color: #d2d2d2;
       height: 90px;
@@ -131,15 +124,14 @@
       position: absolute;
       bottom: 0px;
       .Form__contents{
-        width: 100%;
+        box-sizing: content-box;
         display: flex;
         align-items: center;
-        justify-content: flex-end;
         position: relative;
         .Form__inputContent{
           height: 50px;
           width: 100%;
-          margin: 20 0 20 20;
+          margin: 20px;
           padding-left: 10px;
           }
         .Form__icon{
@@ -159,11 +151,6 @@
           border: none;
           margin: 0 40 0 15;
           padding: 0 30 0 30;
-         }
-         .field_with_errors {
-           height: 100%;
-           width: 100%;
-           margin-right: 20px;
          }
       }
     }
