@@ -62,7 +62,7 @@
 
   .Chat-main{
     width: calc(100% - 300px);
-    height: 100vh;
+    height: 100px;
     background-color: #fafafa;
     &__group_info{
       background-color: #ffffff;
@@ -93,30 +93,35 @@
         }
       }
     }
-    .Chat-main_group_message{
-      display: flex;
-      flex-direction: column;
-      .name-message{
+    
+
+    
+    .MessageField{
+      overflow: scroll;
+      height: calc(100vh - 190px);
+      .Chat-main_group_message{
         display: flex;
-        align-items: center;
-        color: #999999;
-        font-size: 12px;
-        margin: 35px 0px 12px 40px;
-        .post-name{
-          color: #333333;
-          font-size: 16px;
-          margin-right: 5px;
-        }
-        span{
+        flex-direction: column;
+        .name-message{
+          display: flex;
+          align-items: center;
+          color: #999999;
+          font-size: 12px;
+          margin: 35px 0px 12px 40px;
+          .post-name{
+            color: #333333;
+            font-size: 16px;
+            margin-right: 5px;
           }
         }
       p{
         color: #434A54;
         margin: 0px 0px 46px 40px;
         font-size: 14px;
-         }
-     
+          }
     } 
+  }
+    
     .Message-form{
       background-color: #d2d2d2;
       height: 90px;
